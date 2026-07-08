@@ -11,15 +11,15 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css">
 <style>
 :root{
-  --primary:#2563E8;
-  --primary-dark:#1D4ED8;
-  --text-dark:#11182A;
-  --text-sub:#44506B;
-  --text-muted:#6B7488;
-  --bg-blue:#EEF3FD;
-  --bg-gray:#F7F8FA;
-  --border-blue:#D9E3FC;
-  --border:#e4e7ee;
+  --primary:#9C2B7A;
+  --primary-dark:#7A1F5F;
+  --text-dark:#1E1522;
+  --text-sub:#5B4A56;
+  --text-muted:#8A7885;
+  --bg-blue:#F7EDF3;
+  --bg-gray:#F9F5F8;
+  --border-blue:#E8C9DD;
+  --border:#ece3e8;
   --green:#16A34A;
 }
 *{margin:0;padding:0;box-sizing:border-box}
@@ -30,15 +30,12 @@ body{font-family:"Noto Sans JP","Hiragino Kaku Gothic ProN",sans-serif;color:var
 /* MAIN (LEFT) */
 .main{padding:3.5rem 3rem 5rem}
 
-.eyebrow{font-size:12px;color:var(--primary);letter-spacing:3px;font-weight:600;margin-bottom:10px}
-h1.page-title{font-size:32px;font-weight:700;line-height:1.5;color:var(--text-dark);margin-bottom:12px}
-.subhead{font-size:15px;color:var(--text-sub);margin-bottom:1.25rem}
+.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+
+.kv-slot{width:100%;aspect-ratio:1672/941;margin-bottom:1.5rem;border-radius:10px;display:block;object-fit:cover}
+
 .meta-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:2.5rem}
 .meta-chip{font-size:12px;color:var(--primary);background:var(--bg-blue);border:1px solid var(--border-blue);border-radius:20px;padding:5px 14px;font-weight:500}
-
-.img-slot{background:repeating-linear-gradient(45deg,#f5f6f9,#f5f6f9 10px,#ecedf3 10px,#ecedf3 20px);border:1.5px dashed #c7cbd6;border-radius:10px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#98a0b0;text-align:center;line-height:1.6;font-size:13px}
-.kv-slot{width:100%;aspect-ratio:1200/630;margin-bottom:3.5rem}
-.kv-slot .slot-size{font-size:11px;color:#a8afbc;margin-top:2px}
 
 .sec-label{font-size:12px;color:var(--primary);letter-spacing:2.5px;font-weight:600;margin-bottom:6px}
 .sec-title{font-size:24px;font-weight:700;color:var(--text-dark)}
@@ -108,7 +105,6 @@ h1.page-title{font-size:32px;font-weight:700;line-height:1.5;color:var(--text-da
 @media(max-width:900px){
   .layout{grid-template-columns:1fr;max-width:600px}
   .main{padding:2rem 1.25rem 2.5rem}
-  h1.page-title{font-size:26px}
   .highlight-grid{grid-template-columns:1fr}
   .highlight-card:nth-child(5){grid-column:auto}
   .bonus-box{flex-direction:column;padding:1.5rem}
@@ -123,19 +119,14 @@ h1.page-title{font-size:32px;font-weight:700;line-height:1.5;color:var(--text-da
   <!-- MAIN (LEFT): KV -> TOC -> HIGHLIGHTS -> BONUS -->
   <div class="main">
 
-    <p class="eyebrow">WHITEPAPER</p>
-    <h1 class="page-title">EC事業の新規獲得を<br>加速する最新施策</h1>
-    <p class="subhead">LP改善・CVR/LTV最大化から、楽天・Amazon攻略まで<br>セミナー実例に基づく成功ノウハウ集</p>
+    <h1 class="visually-hidden">EC新規顧客獲得大全｜meta運用/CVR改善/楽天/amazon</h1>
+    <img class="kv-slot" src="assets/kv.jpg" alt="EC新規顧客獲得大全 meta運用/CVR改善/楽天/amazon CPA・CVR改善と各種モールの新規獲得がこの1冊に">
+
     <div class="meta-row">
       <span class="meta-chip">全42ページ</span>
       <span class="meta-chip">PDF形式・無料</span>
       <span class="meta-chip">実例7社収録</span>
       <span class="meta-chip">自社診断チェックリスト付き</span>
-    </div>
-
-    <div class="img-slot kv-slot">
-      <p>KV画像(差し替え予定)</p>
-      <p class="slot-size">推奨サイズ 1200×630px ※別途共有予定</p>
     </div>
 
     <!-- TOC -->
